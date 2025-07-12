@@ -1,0 +1,21 @@
+{
+  "name": "advent-of-code-2018",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun index.ts",
+    "ci": "biome ci"
+  },
+  "dependencies": {
+    "endent": "^2.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.1.1",
+    "@tsconfig/bun": "^1.0.8",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
