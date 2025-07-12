@@ -95,6 +95,7 @@ async function handleNew(dayArg: string) {
 
   const testTemplate = endent`
     import { expect, test } from "bun:test"
+    import endent from "endent"
     import { part1, part2 } from "../src/day${day}"
  
     test("part 1 example", () => {
