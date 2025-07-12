@@ -51,7 +51,7 @@ async function handleRun(dayArg: string) {
 
   if (typeof dayScript.part1 === "function") {
     const startTime = performance.now()
-    const result = dayScript.part1(input)
+    const result = dayScript.part1(input) || "<empty>"
     const duration = Math.round(performance.now() - startTime)
 
     console.log(`Part 1: ${result} (${duration}ms)`)
@@ -61,7 +61,7 @@ async function handleRun(dayArg: string) {
 
   if (typeof dayScript.part2 === "function") {
     const startTime = performance.now()
-    const result = dayScript.part2(input)
+    const result = dayScript.part2(input) || "<empty>"
     const duration = Math.round(performance.now() - startTime)
 
     console.log(`Part 2: ${result} (${duration}ms)`)
